@@ -10,14 +10,31 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var lblNombre: UILabel!
+    @IBOutlet weak var lblResultado: UILabel!
+    @IBOutlet weak var txtEdad: UITextField!
+    
+    @IBAction func doTapBtnDecirEdad(_ sender: Any) {
+        lblResultado.text = "La persona \(lblNombre.text!) tiene \(txtEdad.text!) años"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        lblNombre.text = "Marianne Cordova"
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 
